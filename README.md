@@ -35,6 +35,40 @@ Output: `build/app/outputs/flutter-apk/app-release.apk`.
 - Shared reusable widgets are in `lib/shared/widgets`.
 - Data request and response handling is inside repository implementation files.
 
+## Folder Structure
+
+```text
+metaupspace/
+├── assets/
+│   └── fonts/
+├── lib/
+│   ├── core/
+│   │   ├── di/
+│   │   ├── network/
+│   │   ├── theme/
+│   │   └── ui/
+│   ├── data/
+│   │   ├── models/
+│   │   └── repositories/
+│   ├── domain/
+│   │   └── repositories/
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── bloc/
+│   │   │   ├── pages/
+│   │   │   └── widgets/
+│   │   └── dashboard/
+│   │       ├── bloc/
+│   │       ├── pages/
+│   │       └── widgets/
+│   ├── shared/
+│   │   └── widgets/
+│   ├── app.dart
+│   └── main.dart
+├── pubspec.yaml
+└── README.md
+```
+
 ## State Management
 
 - This app uses **BLoC** for screen state.
